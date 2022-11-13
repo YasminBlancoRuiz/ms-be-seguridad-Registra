@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import edu.ciclo4.ms_seguridad.modelos.Permiso;
-import edu.ciclo4.ms_seguridad.repositorios.RepoPermiso;
+import practica.mintic2022.msbeseguridad.modelos.Permiso;
+import practica.mintic2022.msbeseguridad.repositorios.RepoPermiso;
 import lombok.extern.apachecommons.CommonsLog;
 
 import org.springframework.http.HttpStatus;

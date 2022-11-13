@@ -3,6 +3,7 @@ package practica.mintic2022.msbeseguridad.modelos;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
@@ -18,4 +19,5 @@ public class Rol {
     private String tipo;
     private String descripcion;
     
+
 }

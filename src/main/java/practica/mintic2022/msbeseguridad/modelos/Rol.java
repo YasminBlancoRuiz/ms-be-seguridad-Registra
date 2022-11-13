@@ -3,18 +3,21 @@ package practica.mintic2022.msbeseguridad.modelos;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
+import lombok.AccessLevel;
 import lombok.Data;
 import lombok.Setter;
-import lombok.AccessLevel;
 
-@Document
+@Document()
 @Data
 public class Rol {
-    @Id
-    @Setter(AccessLevel.NONE) //le establezco acces none para qeu no pued amodificarse el id
-    private String _id;
 
-    private String descripcion;
+    @Id
+    @Setter(AccessLevel.NONE)
+    private String _id;
+    
     private String tipo;
+    private String descripcion;
+    
 
 }

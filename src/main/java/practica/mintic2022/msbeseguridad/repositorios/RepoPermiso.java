@@ -1,5 +1,8 @@
 package practica.mintic2022.msbeseguridad.repositorios;
 
-public class RepoPermiso {
+import org.springframework.data.mongodb.repository.MongoRepository;
+import edu.ciclo4.ms_seguridad.modelos.Permiso;
+
+public interface RepoPermiso extends MongoRepository<Permiso, String>{
     
 }

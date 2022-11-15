@@ -65,7 +65,7 @@ public class ControladorPermisoRol {
     }
 
     @PutMapping("{id}/rol/{id_rol}/permiso/{id_permiso}")
-    public PermisoRol create(@PathVariable String id, @PathVariable String id_rol, @PathVariable String id_permiso){
+    public PermisoRol update(@PathVariable String id, @PathVariable String id_rol, @PathVariable String id_permiso){
         log.debug("[PUT /rol/" +id_rol + "/permiso/" + id_permiso + "]");
         PermisoRol permisoRolActual = this.repositorioPermisoRol.findById(id).orElse(null);
         Rol rolActual = this.repositorioRol
@@ -94,6 +94,6 @@ public class ControladorPermisoRol {
             this.repositorioPermisoRol.delete(thisPermissionRol);
         }
     }
-
+1
 
 }

@@ -94,6 +94,6 @@ public class ControladorPermisoRol {
             this.repositorioPermisoRol.delete(thisPermissionRol);
         }
     }
-1
+
 
 }
